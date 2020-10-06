@@ -4,8 +4,13 @@ import xml.etree.ElementTree as ET
 from prettytable import PrettyTable
 # Imports of libraries
 
+#------!!!! YOU MUST PUT YOUR API KEY INSIDE KEY.TXT FILE !!!!------#
+with open('key.txt', 'r') as file: #Read API key from key.txt
+    key = file.read().replace('\n', '')
+
 main_api = "https://www.goodreads.com/search.xml?" #The URL where API calls can be made.
-key = "YOUR_KEY_GOES_HERE" #My Private API Key
+
+# key = "YOUR_KEY_GOES_HERE" #My Private API Key #old and unsecure paintext
 
 q = "" #Initialization of variable "q" holding user input.
 
