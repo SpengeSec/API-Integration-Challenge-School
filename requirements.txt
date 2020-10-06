@@ -1,0 +1,4 @@
+prettytable==1.0.0
+pylint==2.6.0
+requests==2.24.0
+urllib3==1.25.10
